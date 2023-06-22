@@ -1,1 +1,1 @@
-#Configuration for my Zorin Distro
+# Configuration for my Zorin Distro
