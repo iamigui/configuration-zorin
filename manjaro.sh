@@ -3,7 +3,7 @@
 sudo pacman -Syu --noconfirm
 sudo pacman -S snapd --noconfirm
 #Install brave
-pamac install brave-browser
+pamac install brave-browser --noconfirm
 # Instalar Pulumi
 curl -fsSL https://get.pulumi.com | sh
 # Instalar Ansible
@@ -34,6 +34,6 @@ git clone https://github.com/notion-enhancer/notion-repackaged.git
 # Instalar golang
 sudo pamac install go --no-confirm
 # Install nodejs
-pamac install nodejs
+pamac install nodejs --noconfirm
 # Install helm
-sudo snap install helm --classicsudo snap install helm --classic
+pamac install helm  --noconfirm
