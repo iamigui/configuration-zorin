@@ -1,6 +1,6 @@
 #!/bin/bash
 #Update and upgrade
-sudp apt get update -y
+sudo apt get update -y
 sudo apt get upgrade -y
 sudo apt install snapd
 #Install pulumi
