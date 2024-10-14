@@ -50,3 +50,7 @@ curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 curl -fsSL https://github.com/helmfile/helmfile/releases/download/v0.168.0/helmfile_0.168.0_linux_386.tar.gz -o helmfile.tar.gz
 sudo mv helmfile  /usr/local/bin
 helm plugin install https://github.com/databus23/helm-diff
+# Install go
+sudo apt-get -y install golang-go
+# Install npm
+sudo apt-get -y install nodejs npm
