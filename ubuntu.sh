@@ -1,15 +1,15 @@
 #!/bin/bash
-#Update and upgrade
+# Update and upgrade
 sudo apt get update -y
 sudo apt get upgrade -y
 sudo apt install snapd
-#Install pulumi
+# Install pulumi
 curl -fsSL https://get.pulumi.com | sh
-#Install ansible
+# Install ansible
 sudo apt-add-repository ppa:ansible/ansible
 sudo apt update
 sudo apt install ansible -y
-#Install awscli
+# Install awscli
 sudo apt install awscli -y
 #Install git
 sudo apt install git -y
@@ -30,15 +30,23 @@ sudo mv /tmp/eksctl /usr/local/bin
 sudo apt install docker.io -y
 sudo usermod -aG docker $USER
 sudo chmod 666 /var/run/docker.sock
-#Install pip
+# Install pip
 sudo apt install python3-pip -y
 # Install vscode
 sudo snap install --classic code
-#Install terraform
+# Install Terraform
 snap install terraform --classic
+# Install Terragrunt
+sudo snap install terragrunt
 # Install k3d
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
-# install Java
+# Install Java
 sudo apt install openjdk-17-jdk
 # Install maven
 sudo apt install maven
+# Install AZ Cli
+curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
+# Install Helmfile
+curl -fsSL https://github.com/helmfile/helmfile/releases/download/v0.168.0/helmfile_0.168.0_linux_386.tar.gz -o helmfile.tar.gz
+sudo mv helmfile  /usr/local/bin
+helm plugin install https://github.com/databus23/helm-diff
