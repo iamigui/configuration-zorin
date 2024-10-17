@@ -41,12 +41,13 @@ sudo snap install terragrunt
 # Install k3d
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 # Install Java
-sudo apt install openjdk-17-jdk
+sudo apt install openjdk-17-jdk -y
 # Install maven
-sudo apt install maven
+sudo apt install maven -y 
 # Install AZ Cli
 curl -sL https://aka.ms/InstallAzureCLIDeb | sudo bash
 # Install Helmfile
+sudo snap install helm --classic
 curl -fsSL https://github.com/helmfile/helmfile/releases/download/v0.168.0/helmfile_0.168.0_linux_386.tar.gz -o helmfile.tar.gz
 sudo mv helmfile  /usr/local/bin
 helm plugin install https://github.com/databus23/helm-diff
