@@ -2,6 +2,7 @@
 # Update and upgrade
 sudo apt get update -y
 sudo apt get upgrade -y
+sudo apt install unzip -y
 sudo apt install snapd
 # Install pulumi
 curl -fsSL https://get.pulumi.com | sh
@@ -38,6 +39,8 @@ sudo snap install --classic code
 snap install terraform --classic
 # Install Terragrunt
 sudo snap install terragrunt
+# Install TFLint
+curl -s https://raw.githubusercontent.com/terraform-linters/tflint/master/install_linux.sh | bash
 # Install k3d
 curl -s https://raw.githubusercontent.com/k3d-io/k3d/main/install.sh | bash
 # Install Java
