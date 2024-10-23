@@ -54,7 +54,18 @@ sudo snap install helm --classic
 curl -fsSL https://github.com/helmfile/helmfile/releases/download/v0.168.0/helmfile_0.168.0_linux_386.tar.gz -o helmfile.tar.gz
 sudo mv helmfile  /usr/local/bin
 helm plugin install https://github.com/databus23/helm-diff
+helm plugin install https://github.com/jkroepke/helm-secrets
 # Install go
 sudo apt-get -y install golang-go
 # Install npm
 sudo apt-get -y install nodejs npm
+# SOPS
+curl -LO https://github.com/getsops/sops/releases/download/v3.9.1/sops-v3.9.1.linux.amd64
+sudo mv sops-v3.9.1.linux.amd64 /usr/local/bin/sops
+sudo chmod +x /usr/local/bin/sops
+# ORAS
+sudo snap install oras --classic
+# JQ YQ
+sudo apt install jq yq -y
+# AKS CLI
+sudo az aks install-cli
